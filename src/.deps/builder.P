@@ -1,0 +1,103 @@
+builder.o: builder.c ../include/builder.h /sw/include/gsl/gsl_randist.h \
+  /sw/include/gsl/gsl_rng.h /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/sys/wait.h \
+  /usr/include/sys/signal.h /usr/include/sys/appleapiopts.h \
+  /usr/include/machine/signal.h /usr/include/i386/signal.h \
+  /usr/include/sys/resource.h /usr/include/machine/endian.h \
+  /usr/include/i386/endian.h /usr/include/sys/_endian.h \
+  /usr/lib/gcc/i686-apple-darwin8/4.0.1/include/stdint.h \
+  /usr/include/libkern/OSByteOrder.h \
+  /usr/include/libkern/i386/OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /sw/include/gsl/gsl_types.h /sw/include/gsl/gsl_errno.h \
+  /usr/include/stdio.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /sw/include/gsl/gsl_cdf.h /sw/include/libxml2/libxml/encoding.h \
+  /sw/include/libxml2/libxml/xmlversion.h \
+  /sw/include/libxml2/libxml/xmlexports.h /sw/include/iconv.h \
+  /usr/lib/gcc/i686-apple-darwin8/4.0.1/include/stddef.h \
+  /sw/include/libxml2/libxml/tree.h \
+  /sw/include/libxml2/libxml/xmlstring.h \
+  /usr/lib/gcc/i686-apple-darwin8/4.0.1/include/stdarg.h \
+  /sw/include/libxml2/libxml/xmlregexp.h \
+  /sw/include/libxml2/libxml/dict.h \
+  /sw/include/libxml2/libxml/xmlmemory.h \
+  /sw/include/libxml2/libxml/threads.h \
+  /sw/include/libxml2/libxml/globals.h \
+  /sw/include/libxml2/libxml/parser.h /sw/include/libxml2/libxml/hash.h \
+  /sw/include/libxml2/libxml/valid.h \
+  /sw/include/libxml2/libxml/xmlerror.h /sw/include/libxml2/libxml/list.h \
+  /sw/include/libxml2/libxml/xmlautomata.h \
+  /sw/include/libxml2/libxml/entities.h \
+  /sw/include/libxml2/libxml/xmlIO.h /sw/include/libxml2/libxml/SAX.h \
+  /sw/include/libxml2/libxml/xlink.h /sw/include/libxml2/libxml/SAX2.h \
+  /sw/include/libxml2/libxml/xmlwriter.h /usr/include/time.h \
+  /usr/include/machine/_limits.h /usr/include/i386/_limits.h \
+  /usr/include/string.h /sw/include/libxml2/libxml/xpath.h \
+  /sw/include/libxml2/libxml/xpathInternals.h ../include/utils.h \
+  ../include/builder.h
+builder.c :
+../include/builder.h :
+/sw/include/gsl/gsl_randist.h :
+/sw/include/gsl/gsl_rng.h :
+/usr/include/stdlib.h :
+/usr/include/sys/cdefs.h :
+/usr/include/_types.h :
+/usr/include/sys/_types.h :
+/usr/include/machine/_types.h :
+/usr/include/i386/_types.h :
+/usr/include/sys/wait.h :
+/usr/include/sys/signal.h :
+/usr/include/sys/appleapiopts.h :
+/usr/include/machine/signal.h :
+/usr/include/i386/signal.h :
+/usr/include/sys/resource.h :
+/usr/include/machine/endian.h :
+/usr/include/i386/endian.h :
+/usr/include/sys/_endian.h :
+/usr/lib/gcc/i686-apple-darwin8/4.0.1/include/stdint.h :
+/usr/include/libkern/OSByteOrder.h :
+/usr/include/libkern/i386/OSByteOrder.h :
+/usr/include/alloca.h :
+/usr/include/machine/types.h :
+/usr/include/i386/types.h :
+/sw/include/gsl/gsl_types.h :
+/sw/include/gsl/gsl_errno.h :
+/usr/include/stdio.h :
+/usr/include/errno.h :
+/usr/include/sys/errno.h :
+/sw/include/gsl/gsl_cdf.h :
+/sw/include/libxml2/libxml/encoding.h :
+/sw/include/libxml2/libxml/xmlversion.h :
+/sw/include/libxml2/libxml/xmlexports.h :
+/sw/include/iconv.h :
+/usr/lib/gcc/i686-apple-darwin8/4.0.1/include/stddef.h :
+/sw/include/libxml2/libxml/tree.h :
+/sw/include/libxml2/libxml/xmlstring.h :
+/usr/lib/gcc/i686-apple-darwin8/4.0.1/include/stdarg.h :
+/sw/include/libxml2/libxml/xmlregexp.h :
+/sw/include/libxml2/libxml/dict.h :
+/sw/include/libxml2/libxml/xmlmemory.h :
+/sw/include/libxml2/libxml/threads.h :
+/sw/include/libxml2/libxml/globals.h :
+/sw/include/libxml2/libxml/parser.h :
+/sw/include/libxml2/libxml/hash.h :
+/sw/include/libxml2/libxml/valid.h :
+/sw/include/libxml2/libxml/xmlerror.h :
+/sw/include/libxml2/libxml/list.h :
+/sw/include/libxml2/libxml/xmlautomata.h :
+/sw/include/libxml2/libxml/entities.h :
+/sw/include/libxml2/libxml/xmlIO.h :
+/sw/include/libxml2/libxml/SAX.h :
+/sw/include/libxml2/libxml/xlink.h :
+/sw/include/libxml2/libxml/SAX2.h :
+/sw/include/libxml2/libxml/xmlwriter.h :
+/usr/include/time.h :
+/usr/include/machine/_limits.h :
+/usr/include/i386/_limits.h :
+/usr/include/string.h :
+/sw/include/libxml2/libxml/xpath.h :
+/sw/include/libxml2/libxml/xpathInternals.h :
+../include/utils.h :
+../include/builder.h :
