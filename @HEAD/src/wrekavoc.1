@@ -1,0 +1,133 @@
+.TH "wrekavoc" 1 "20 Mar 2007" "Version 0.5" "Wrekavoc" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+wrekavoc \- .SH "wrekavoc"
+.PP
+.SH "DESCRIPTION"
+.PP
+The goal of Wrekavoc is to define and control the heterogeneity of a given platform by degrading CPU, network or memory capabilities of each node composing this platform. The degradation is done remotely, without restarting the hardware. The control is fine, reproducible and independent (one may degrades CPU without modifying the network bandwidth).
+.PP
+Wrekavoc's binaries have to be installed on all the nodes you wish to 'heterogeneized'.
+.PP
+Two deamons must be running on each node with root's privileges: 
+.PP
+.nf
+wrekavocd
+cpulimd
+
+.fi
+.PP
+.SH "SYNOPSIS"
+.PP
+wrekavoc is the client, the usage is: 
+.PP
+.nf
+wrekavoc <script> | <-c host [rhost] > | <-r [script] > | <-q>
+
+.fi
+.PP
+.PP
+where 
+.PD 0
+
+.IP "\(bu" 2
+\fIscript\fP is a file describing the way you want to heterogeneized your nodes 
+.IP "\(bu" 2
+\fI-c\fP is for checking a host 
+.IP "\(bu" 2
+\fI-r\fP is for reseting the platform to its original configuration 
+.IP "\(bu" 2
+\fI-q\fP is for killing all the deamons
+.PP
+Some definitions: 
+.PP
+.nf
+- An islet is a set of nodes that share similar limitation
+
+.fi
+.PP
+.PP
+.PP
+.nf
+- Two islets are linked by a virtual network which can be limited
+.fi
+.PP
+.PP
+The script file describe the properties of all the nodes, group by islet
+.PP
+.PP
+.nf
+name1 : range1 {
+ SEED : seed1
+ CPU : cpu1
+ BPOUT : bpout1
+ BPIN : bpin1
+ LAT : lat1
+ USER : user1
+ MEM : mem1
+ }
+ name2 : range2 {
+ SEED : seed2
+ CPU : cpu2
+ BPOUT : bpout2
+ BPIN : bpin2
+ LAT : lat2
+ USER : user2
+ MEM : mem2
+ }
+ !INTER : inter_islet1 isletbp12 isletbp21 isletlatency interseed
+.fi
+.PP
+.PP
+Where : 
+.PD 0
+
+.IP "\(bu" 2
+\fIname1\fP, \fIname2\fP are islet's name 
+.IP "\(bu" 2
+\fIrange1\fP, \fIrange2\fP are IP adresses of node 
+.IP "\(bu" 2
+\fIseed1\fP, \fIseed2\fP, if -1, generates different configuration each time we configure the nodes, if > 0, ensure reproducibility of the nodes configuration (cf distribution) 
+.IP "\(bu" 2
+\fIcpu1\fP, \fIcpu2\fP are CPU's frequency distribution in \fIMHz\fP 
+.IP "\(bu" 2
+\fIbpout1\fP, \fIbpout2\fP, \fIbpin2\fP, \fIbpin2\fP are bandwidth distribution in \fIMbits/s\fP 
+.IP "\(bu" 2
+\fIlat1\fP, \fIlat2\fP are latency distribution in \fIms\fP 
+.IP "\(bu" 2
+\fIuser1\fP, \fIuser2\fP are user whose performances are degraded 
+.IP "\(bu" 2
+\fImem1\fP, \fImem2\fP are memory size distribution in \fIMo\fP 
+.IP "\(bu" 2
+\fIinter_islet1\fP name of the two islets concerned [\fIname1\fP;\fIname2\fP] 
+.IP "\(bu" 2
+\fIisletbp12\fP, \fIisletbp21\fP are bandwidth distribution between the two islets in \fIMbits/s\fP 
+.PP
+There are two types of distribution : 
+.PD 0
+
+.IP "\(bu" 2
+[val1-val2]: uniform distribution between \fIval1\fP and \fIval2\fP with the seed \fIseed1\fP 
+.IP "\(bu" 2
+[val1;val2]: Gaussian distribution where \fIval1\fP is the average value and \fIval2\fP is the dispertion
+.PP
+.SH "AUTHOR"
+.PP
+.PD 0
+.IP "\(bu" 2
+\fIProject\fP \fIleader:\fP 
+.IP "\(bu" 2
+Pr. E. Jeannot 
+.IP "\(bu" 2
+\fIDevelopers:\fP 
+.IP "\(bu" 2
+M. Thierry (2004) 
+.IP "\(bu" 2
+L.-C. Canon (2005-2006) 
+.IP "\(bu" 2
+O. Dubuisson (2007)
+.PP
+.SH "COPYRIGHT"
+.PP
+Wrekavoc is governed by the CeCill license under French law. CeCILL license is compatible GNU GPL. 

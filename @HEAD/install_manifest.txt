@@ -1,0 +1,10 @@
+/usr/local/man/man1/wrekavoc.1
+/usr/local/bin/burn
+/usr/local/bin/cpulim
+/usr/local/bin/cpulimd
+/usr/local/bin/wrekaconf
+/usr/local/bin/wrekavalid
+/usr/local/bin/wrekavoc
+/usr/local/bin/wrekavocd
+/usr/local/bin/pim2
+/usr/local/bin/pimwreka

@@ -1,0 +1,15 @@
+~~ Wrekavoc Changelog ~~
+
+This is a shortened version of the changelog.
+
+0.3 (2007-01-01)
+ - first official release
+0.4 (2007-02-12)
+ - We changed the memory management: we don't use the PAM module anymore but the mlock/munlock functions
+ - For the bandwidth management, we improve performance of bandwidth limitation
+ - We add wrekavalid which can test wrekavoc in a few minutes
+ - We add the support for autotools
+0.5 (2007-03-09)
+ - We add wrekaconf which can create wrekavoc config file easily
+ - We modify bandwidth management : if a node A have to send to 5 nodes for example, the sum of the bandwidth for the 5 nodes is the output bandwidth of the node A. Before the sum was equal to 5 * the output bandwidth of A.
+ - We changed unit used in configuration : bandwhidth in Mbits/s, memory in Mo, cpu in MHz and latency in ms.
