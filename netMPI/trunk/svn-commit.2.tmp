@@ -1,0 +1,8 @@
+
+--This line, and those below, will be ignored--
+
+M    net_MPI.h
+M    ex_MPI.c
+M    net_MPI.c
+AM   Makefile
+M    tags

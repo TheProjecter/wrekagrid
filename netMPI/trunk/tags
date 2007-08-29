@@ -1,0 +1,10 @@
+Mex_MPI	ex_MPI.c	/^int main(int argc, char **argv)$/
+arr_avg	net_MPI.c	/^double arr_avg(double *results, int nbtasks){$/
+displ_txt	net_MPI.c	/^int displ_txt(FILE *stream, double **results, int /
+displ_txtp	net_MPI.c	/^int displ_txtp(FILE *stream, double **results, int/
+error_handle_MPI	net_MPI.c	/^void *error_handle_MPI(int error, int myrank, char/
+net_MPI_bdw_bisr	net_MPI.c	/^double *net_MPI_bdw_bisr(int master_rank, int nbta/
+net_MPI_bdw_bsr	net_MPI.c	/^double *net_MPI_bdw_bsr(int master_rank, int nbtas/
+net_MPI_bdw_isr	net_MPI.c	/^double *net_MPI_bdw_isr(int master_rank, int nbtas/
+net_MPI_bdw_sr	net_MPI.c	/^double *net_MPI_bdw_sr(int master_rank, int nbtask/
+net_MPI_lat_bsr	net_MPI.c	/^double *net_MPI_lat_bsr(int master_rank, int nbtas/
